@@ -9,7 +9,7 @@ export const CardImage: FC = () => {
   return (
     <ImageFrame darkMode={darkMode}>
       <Image
-        src="/profile1.jpeg"
+        src="/Profile1.jpeg"
         alt="Profile"
         className="image"
         width={300}
