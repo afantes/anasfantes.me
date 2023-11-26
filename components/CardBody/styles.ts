@@ -16,7 +16,7 @@ export const StyledCardBody = styled.div`
   @media (max-width: 1280px) {
     flex-direction: row;
     gap: 60px;
-    margin-top: -50px;
+    margin-top: -25px;
     padding: 15px;
   }
 
@@ -24,6 +24,7 @@ export const StyledCardBody = styled.div`
     flex-direction: column;
     gap: 20px;
     padding: 10px;
+    margin-top:50px;
   }
 `;
 
@@ -71,8 +72,8 @@ export const TextSection = styled.div<DarkProps>`
 
   @media (max-width: 700px) {
     h2 {
-      margin-top: 95px;
-      margin-bottom: 15px;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
 
     p {
