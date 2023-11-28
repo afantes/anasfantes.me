@@ -19,13 +19,11 @@ export const CardContainer = styled.div<DarkProps>`
   border: ${({ darkMode }) => darkMode ? "2px solid #f5f5dc" : "2px solid black"};
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
   }
   
   @media (max-width: 1366px) {
@@ -67,7 +65,6 @@ export const ProjectDescription = styled.p<DarkProps>`
   line-height: 1.5; 
   color: ${({ darkMode }) => darkMode ? "#f5f5dc" : "#333"};
   margin-bottom: 18px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   
   @media (max-width: 1366px) {
     font-size: 10px;

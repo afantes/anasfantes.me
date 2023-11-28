@@ -5,22 +5,15 @@ type DarkProps = {
 };
 
 export const ImageFrame = styled.div<DarkProps>`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(300px + 20px);
-  height: calc(500px + 20px);
-  margin-bottom: 30px;
-  padding: 10px;
-  border: ${({ darkMode }) => darkMode ? '2px solid #f5f5dc' : '2px solid black'};
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  opacity: 0.92;
-
-  .image {
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 15px;
+  margin-bottom: 40px;
+  border: ${({ darkMode }) => darkMode ? '0.9px solid #F5F5F5' : '0.9px solid #161B22'};
+  opacity: 0.93;
 
   @media (max-width: 1280px) {
     margin-top: 70px;

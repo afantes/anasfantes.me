@@ -10,7 +10,7 @@ export const StyledCardBody = styled.div`
   align-items: center; 
   gap: 125px; 
   height: 100%;
-  margin-top: -20px; 
+  margin-top: -40px; 
   padding: 20px; 
 
   @media (max-width: 1280px) {
@@ -36,7 +36,6 @@ export const TextSection = styled.div<DarkProps>`
   line-height: 1.8;
   color: ${({ darkMode }) => darkMode ? '#f5f5dc' : '#333'};
   text-align: justify;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   max-width: 450px;
   margin-top: -50px;
 
@@ -52,7 +51,7 @@ export const TextSection = styled.div<DarkProps>`
 
   p {
     max-width: 280px;
-    margin: auto;
+    margin: 0 auto 25px;
     span {
       font-weight: bold;
     }

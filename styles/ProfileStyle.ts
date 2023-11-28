@@ -25,7 +25,6 @@ export const Title = styled.h2`
   text-align: center;
   color: #333;
   margin: 20px 0px 0px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   
   @media (max-width: 1280px) {
     font-size: 2.5em;

@@ -14,7 +14,9 @@ const ProfilePage: FC = () => {
   const router = useRouter();
 
   const handleGoBack = () => {
-    if (window.history.length > 1) {
+    const hasVisited = sessionStorage.getItem("hasVisited");
+
+    if (hasVisited) {
       router.back();
     } else {
       router.push("/");

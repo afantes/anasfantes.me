@@ -11,10 +11,10 @@ export const CardImage: FC = () => {
       <Image
         src="/Profile1.jpeg"
         alt="Profile"
-        className="image"
-        width={300}
-        height={500}
+        layout="fill"
         objectFit="cover"
+        objectPosition="50% 42%"
+        className="image"
       />
     </ImageFrame>
   );

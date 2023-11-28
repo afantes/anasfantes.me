@@ -95,17 +95,18 @@ export const IconsContainer = styled.div`
   }
 
   @media (max-width: 700px) {
-    margin-top: 20px;
-    margin-left: 98px;
+    margin-top: 15px;
+    margin-left: 25px;
   }
 `;
 
 export const IconLink = styled.a<DarkProps>`
   font-size: 1.5rem;  
   color: ${({ darkMode }) => darkMode ? '#f5f5dc' : '#333'};
+  margin-right: 15px;
   
-  &:not(:last-child) {
-    margin-right: 15px;
+  &.mail-icon {
+    font-size: 1.8rem;
   }
 
   &:hover {
@@ -116,7 +117,7 @@ export const IconLink = styled.a<DarkProps>`
 export const ModeIcon = styled.div<DarkProps>`
   font-size: 1.5rem;  
   color: ${({ darkMode }) => darkMode ? '#f5f5dc' : '#333'};
-  margin-left: 2px;
+  margin-left: 5px;
   cursor: pointer;
 
   &:hover {

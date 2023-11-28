@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useAtom } from "jotai";
 import { darkModeAtom } from "@/store";
 import { FaLinkedin, FaGithub, FaRegMoon } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 import { MdOutlineLightMode } from "react-icons/md";
 import {
   StyledNavigationBar,
@@ -41,14 +42,6 @@ export const NavigationBar: FC = () => {
             Projects
           </StyledLink>
         </Link>
-        <Link href="/contact" passHref>
-          <StyledLink
-            darkMode={darkMode}
-            className={router.pathname === "/contact" ? "active" : ""}
-          >
-            Contact
-          </StyledLink>
-        </Link>
       </LinksContainer>
       <IconsContainer>
         <IconLink
@@ -66,6 +59,15 @@ export const NavigationBar: FC = () => {
           rel="noopener noreferrer"
         >
           <FaGithub />
+        </IconLink>
+        <IconLink
+          darkMode={darkMode}
+          href="mailto:hey@anasfantes.me"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mail-icon"
+        >
+          <IoMdMail />
         </IconLink>
         <ModeIcon darkMode={darkMode} onClick={toggleDarkMode}>
           {darkMode ? <MdOutlineLightMode /> : <FaRegMoon />}

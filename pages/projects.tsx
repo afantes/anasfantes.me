@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { useAtom } from "jotai";
 import { darkModeAtom } from "@/store";
 import { StyledParagraph, StyledLink } from "@/styles/ProjectsStyle";
@@ -62,6 +62,11 @@ const projects: Project[] = [
 
 const Projects: FC = () => {
   const [darkMode] = useAtom(darkModeAtom);
+
+  useEffect(() => {
+    sessionStorage.setItem("hasVisited", "true");
+  }, []);
+
   return (
     <Container>
       <Card>
