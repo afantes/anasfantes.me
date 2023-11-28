@@ -13,10 +13,17 @@ export const StyledCardBody = styled.div`
   margin-top: -40px; 
   padding: 20px; 
 
-  @media (max-width: 1280px) {
+  @media (width: 1366px) {
     flex-direction: row;
     gap: 60px;
-    margin-top: -15px;
+    margin-top: 35px;
+    padding: 15px;
+  }
+
+  @media (max-width: 1365px) {
+    flex-direction: row;
+    gap: 60px;
+    margin-top: -10px;
     padding: 15px;
   }
 
