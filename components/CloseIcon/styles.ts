@@ -16,7 +16,7 @@ export const StyledCloseIcon = styled.div<DarkProps>`
   color: #000;
   width: 28px;
   height: 28px;
-  border: ${({ darkMode }) => darkMode ? '1px solid #F5F5F5' : '1px solid #0A192F'}; 
+  border: ${({ darkMode }) => darkMode ? '1px solid #F5F5F5' : '1px solid #0f1a2a'}; 
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;

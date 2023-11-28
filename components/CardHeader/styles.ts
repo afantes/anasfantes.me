@@ -18,7 +18,7 @@ export const StyledCardHeader = styled.div`
   
   @media (max-width: 1280px) {
     .navigation-bar {
-      margin-top: 10px;
+      margin-top: -35px;
     }
   }
 

@@ -12,11 +12,11 @@ export const ImageFrame = styled.div<DarkProps>`
   overflow: hidden;
   padding: 15px;
   margin-bottom: 40px;
-  border: ${({ darkMode }) => darkMode ? '0.9px solid #F5F5F5' : '0.9px solid #161B22'};
+  border: ${({ darkMode }) => darkMode ? '0.2px solid #F5F5F5' : '0.2px solid #0f1a2a'};
   opacity: 0.93;
 
   @media (max-width: 1280px) {
-    margin-top: 70px;
+    margin-top: 20px;
   }
 
   @media (max-width: 700px) {

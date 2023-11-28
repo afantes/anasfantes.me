@@ -16,7 +16,7 @@ export const StyledCardBody = styled.div`
   @media (max-width: 1280px) {
     flex-direction: row;
     gap: 60px;
-    margin-top: -25px;
+    margin-top: -15px;
     padding: 15px;
   }
 

@@ -11,7 +11,7 @@ export const StyledNavigationBar = styled.nav`
   padding: 0px 5px;
 
   @media (max-width: 1280px) {
-    margin: 0px 0 20px;
+    margin: 0px 0 10px;
     padding: 0;
   }
 

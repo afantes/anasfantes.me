@@ -7,6 +7,8 @@ type DarkProps = {
 export const CardContainer = styled.div<DarkProps>`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: ${({ darkMode }) => darkMode ? "url('/bg03-dark.jpg')" : "url('/bg03.jpg')"};
   background-size: cover;
   background-position: center;
@@ -27,8 +29,8 @@ export const CardContainer = styled.div<DarkProps>`
   }
   
   @media (max-width: 1366px) {
-    width: 90%;
-    margin: 15px;
+    width: 30%;
+    margin: 10px;
   }
 
   @media (max-width: 700px) {
@@ -52,7 +54,12 @@ export const ProjectTitle = styled.h3`
     margin: 0 0 2px 0;
   }
 
+  @media (max-width: 1000px) {
+    font-size: 14px;
+  }
+
   @media (max-width: 700px) {
+    font-size: 16px;
     margin: 0 0 2px 0;
   }
 `;
@@ -65,9 +72,14 @@ export const ProjectDescription = styled.p<DarkProps>`
   line-height: 1.5; 
   color: ${({ darkMode }) => darkMode ? "#f5f5dc" : "#333"};
   margin-bottom: 18px;
-  
+
   @media (max-width: 1366px) {
+    max-width: 250px;
     font-size: 10px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 8px;
   }
 
   @media (max-width: 700px) {

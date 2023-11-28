@@ -1,20 +1,19 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 1200px;
-  margin: 15px auto 0px;
+  display: flex;
+  justify-content: center; // Centre horizontalement
+  align-items: center; // Centre verticalement
+  flex-wrap: wrap; // Permet un enroulement
+  max-width: 2000px;
+  margin: 12px auto 0px;
   padding: 20px;
 
-  @media (max-width: 1366px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+  @media (min-width: 1366px) {
+    max-width: 3000px;
   }
 
   @media (max-width: 700px) {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
     margin: -10px auto 0px;
   }
 `;
