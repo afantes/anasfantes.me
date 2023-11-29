@@ -9,6 +9,11 @@ export const Wrapper = styled.div`
   margin: 12px auto 0px;
   padding: 20px;
 
+  @media (width: 1536px) {
+    width: 1300px;
+    margin: -15px -80px 0px;
+  }
+
   @media (min-width: 1366px) {
     max-width: 3000px;
   }
