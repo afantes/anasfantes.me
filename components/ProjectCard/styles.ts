@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 
 type DarkProps = {
   darkMode: boolean;
 };
 
-export const CardContainer = styled.div<DarkProps>`
+export const CardContainer = styled(motion.div) <DarkProps>`
   display: flex;
   flex-direction: column;
   align-items: center;

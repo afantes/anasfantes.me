@@ -10,5 +10,20 @@ interface CardProps {
 export const Card: FC<CardProps> = ({ children }) => {
   const [darkMode] = useAtom(darkModeAtom);
 
-  return <StyledCard darkMode={darkMode}>{children}</StyledCard>;
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1 },
+  };
+
+  return (
+    <StyledCard
+      variants={cardVariants}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.6 }}
+      darkMode={darkMode}
+    >
+      {children}
+    </StyledCard>
+  );
 };

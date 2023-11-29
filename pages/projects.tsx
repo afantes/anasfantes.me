@@ -72,8 +72,12 @@ const Projects: FC = () => {
       <Card>
         <CardHeader />
         <ProjectsWrapper>
-          {projects.map((project) => (
-            <ProjectCard key={project.title} {...project} />
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={project.title}
+              {...project}
+              index={index} // Passer l'index à ProjectCard
+            />
           ))}
         </ProjectsWrapper>
         <StyledParagraph darkMode={darkMode}>

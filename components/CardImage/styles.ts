@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 type DarkProps = {
   darkMode: boolean;
 };
 
-export const ImageFrame = styled.div<DarkProps>`
+export const ImageFrame = styled(motion.div) <DarkProps>`
   position: relative;
   width: 300px;
   height: 300px;

@@ -10,6 +10,14 @@ export const StyledParagraph = styled.p<DarkProps>`
     text-align: center;
     color: ${({ darkMode }) => darkMode ? "#f5f5dc" : "#333"};
     margin-top: 8px;
+
+    @media (width: 1600px) {
+        margin-top: -5px;
+    }
+
+    @media (width: 1536px) {
+        margin-top: -10px;
+    }
 `;
 
 export const StyledLink = styled.a`

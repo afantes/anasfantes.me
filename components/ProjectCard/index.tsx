@@ -49,6 +49,7 @@ interface Project {
   description: string;
   link: string;
   technologies: string[];
+  index: number;
 }
 
 export const ProjectCard: FC<Project> = ({
@@ -56,10 +57,24 @@ export const ProjectCard: FC<Project> = ({
   description,
   link,
   technologies,
+  index,
 }) => {
   const [darkMode] = useAtom(darkModeAtom);
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { delay: index * 0.3, duration: 1 },
+    },
+  };
+
   return (
     <CardContainer
+      variants={cardVariants}
+      initial="hidden"
+      animate="visible"
       darkMode={darkMode}
       onClick={() => window.open(link, "_blank")}
     >

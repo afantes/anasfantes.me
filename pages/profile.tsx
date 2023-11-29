@@ -13,6 +13,16 @@ import {
 const ProfilePage: FC = () => {
   const router = useRouter();
 
+  const containerVariants = {
+    hidden: { scale: 0.5, rotate: -50, opacity: 0 },
+    visible: {
+      scale: 1,
+      rotate: 0,
+      opacity: 1,
+      transition: { type: "spring", stiffness: 100 },
+    },
+  };
+
   const handleGoBack = () => {
     const hasVisited = sessionStorage.getItem("hasVisited");
 
@@ -25,7 +35,11 @@ const ProfilePage: FC = () => {
 
   return (
     <Container>
-      <StyledContainer>
+      <StyledContainer
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <ImageContainer>
           <Image
             src="/Profile2.jpeg"

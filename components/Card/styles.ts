@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 type DarkProps = {
   darkMode: boolean;
 };
 
-export const StyledCard = styled.div<DarkProps>`
+export const StyledCard = styled(motion.div) <DarkProps>`
   background-color: ${({ darkMode }) => darkMode ? '#0f1a2a' : '#F5F5F5'};
   position: relative; 
   width: 90%;

@@ -19,6 +19,19 @@ export const NavigationBar: FC = () => {
   const router = useRouter();
   const [darkMode, setDarkMode] = useAtom(darkModeAtom);
 
+  const modeIconVariants = {
+    toggle: {
+      scale: [1, 1.2, 1],
+      opacity: [1, 0.5, 1],
+      transition: { duration: 0.8 },
+    },
+    untoggle: {
+      scale: [1, 1.2, 1],
+      opacity: [1, 0.5, 1],
+      transition: { duration: 0.8 },
+    },
+  };
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
@@ -45,6 +58,8 @@ export const NavigationBar: FC = () => {
       </LinksContainer>
       <IconsContainer>
         <IconLink
+          animate={darkMode ? "toggle" : "untoggle"}
+          variants={modeIconVariants}
           darkMode={darkMode}
           href="https://www.linkedin.com/in/anas-fantes/"
           target="_blank"
@@ -53,6 +68,8 @@ export const NavigationBar: FC = () => {
           <FaLinkedin />
         </IconLink>
         <IconLink
+          animate={darkMode ? "toggle" : "untoggle"}
+          variants={modeIconVariants}
           darkMode={darkMode}
           href="https://github.com/afantes"
           target="_blank"
@@ -61,6 +78,8 @@ export const NavigationBar: FC = () => {
           <FaGithub />
         </IconLink>
         <IconLink
+          animate={darkMode ? "toggle" : "untoggle"}
+          variants={modeIconVariants}
           darkMode={darkMode}
           href="mailto:hey@anasfantes.me"
           target="_blank"
@@ -69,7 +88,12 @@ export const NavigationBar: FC = () => {
         >
           <IoMdMail />
         </IconLink>
-        <ModeIcon darkMode={darkMode} onClick={toggleDarkMode}>
+        <ModeIcon
+          animate={darkMode ? "toggle" : "untoggle"}
+          variants={modeIconVariants}
+          onClick={toggleDarkMode}
+          darkMode={darkMode}
+        >
           {darkMode ? <MdOutlineLightMode /> : <FaRegMoon />}
         </ModeIcon>
       </IconsContainer>

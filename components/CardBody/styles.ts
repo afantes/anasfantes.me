@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 type DarkProps = {
   darkMode: boolean;
@@ -12,6 +13,13 @@ export const StyledCardBody = styled.div`
   height: 100%;
   margin-top: -40px; 
   padding: 20px; 
+
+  @media (width: 1368px) {
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 35px;
+    padding: 15px;
+  }
 
   @media (width: 1366px) {
     flex-direction: row;
@@ -27,6 +35,13 @@ export const StyledCardBody = styled.div`
     padding: 15px;
   }
 
+  @media (width: 1333px) {
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 35px;
+    padding: 15px;
+  }
+
   @media (max-width: 700px) {
     flex-direction: column;
     gap: 20px;
@@ -35,7 +50,7 @@ export const StyledCardBody = styled.div`
   }
 `;
 
-export const TextSection = styled.div<DarkProps>`
+export const TextSection = styled(motion.div) <DarkProps>`
   font-family: 'Poppins', sans-serif !important;
   font-size: 16px;
   font-weight: normal;

@@ -7,10 +7,20 @@ import { CardImage } from "@/components/CardImage";
 
 export const CardBody: FC = () => {
   const [darkMode] = useAtom(darkModeAtom);
+  const bodyVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
     <StyledCardBody>
-      <TextSection darkMode={darkMode}>
+      <TextSection
+        variants={bodyVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 1.5, delay: 0.5 }}
+        darkMode={darkMode}
+      >
         <h2>FRONT-END WEB DEVELOPER</h2>
         <p>
           Hi I'm <span>Anas Fantes</span>, a passionate Front-end Developer with

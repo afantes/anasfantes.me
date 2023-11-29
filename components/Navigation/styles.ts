@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 type DarkProps = {
   darkMode: boolean;
@@ -100,7 +101,7 @@ export const IconsContainer = styled.div`
   }
 `;
 
-export const IconLink = styled.a<DarkProps>`
+export const IconLink = styled(motion.a) <DarkProps>`
   font-size: 1.5rem;  
   color: ${({ darkMode }) => darkMode ? '#f5f5dc' : '#333'};
   margin-right: 15px;
@@ -114,7 +115,7 @@ export const IconLink = styled.a<DarkProps>`
   }
 `;
 
-export const ModeIcon = styled.div<DarkProps>`
+export const ModeIcon = styled(motion.div) <DarkProps>`
   font-size: 1.5rem;  
   color: ${({ darkMode }) => darkMode ? '#f5f5dc' : '#333'};
   margin-left: 5px;

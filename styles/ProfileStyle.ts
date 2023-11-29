@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const StyledContainer = styled.div`
+export const StyledContainer = styled(motion.div)`
   text-align: center;
 `;
 
