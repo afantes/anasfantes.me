@@ -6,7 +6,7 @@ const SEO: DefaultSeoProps = {
     openGraph: {
         type: 'website',
         locale: 'en_EN',
-        url: 'https://www.anasfantes.vercel.app/',
+        url: 'https://anasfantes.me',
         site_name: 'Anas Fantes',
     },
     additionalMetaTags: [
