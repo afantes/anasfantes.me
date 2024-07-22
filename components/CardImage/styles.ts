@@ -12,7 +12,7 @@ export const ImageFrame = styled(motion.div) <DarkProps>`
   border-radius: 50%;
   overflow: hidden;
   padding: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   border: ${({ darkMode }) => darkMode ? '0.2px solid #F5F5F5' : '0.2px solid #0f1a2a'};
   opacity: 0.93;
 

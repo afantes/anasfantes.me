@@ -21,7 +21,7 @@ export const CardBody: FC = () => {
         transition={{ duration: 1.5, delay: 0.5 }}
         darkMode={darkMode}
       >
-        <h2>FRONT-END WEB DEVELOPER</h2>
+        <h2>SOFTWARE ENGINEER</h2>
         <p>
           Hi I'm <span>Anas Fantes</span>, a passionate Front-end Software
           Engineer with a keen eye for details, based in Morocco.
