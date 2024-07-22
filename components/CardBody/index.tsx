@@ -23,8 +23,8 @@ export const CardBody: FC = () => {
       >
         <h2>FRONT-END WEB DEVELOPER</h2>
         <p>
-          Hi I'm <span>Anas Fantes</span>, a passionate Front-end Developer with
-          a keen eye for details based in Morocco.
+          Hi I'm <span>Anas Fantes</span>, a passionate Front-end Software
+          Engineer with a keen eye for details, based in Morocco.
         </p>
         <Button text="Resume" href="/CV.pdf" />
       </TextSection>
